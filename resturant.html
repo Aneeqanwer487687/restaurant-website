@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taste Hub - Restaurant</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* NAVBAR */
+nav {
+  background: #8b0000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #ffd700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  height: 600px;
+  background: url("img/rest\ 5.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 49px;
+  color: #ffffff;
+  
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* COMMON */
+section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.title h2 {
+  font-size: 36px;
+  color: #8b0000;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+  color: #8b0000;
+}
+
+.card p {
+  padding: 0 10px 15px;
+  font-size: 14px;
+}
+
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px;
+  background: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Taste <span>Hub</span></div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#desi">Desi Food</a></li>
+    <li><a href="#fast">Fast Food</a></li>
+    <li><a href="#salad">Salads</a></li>
+    <li><a href="#dessert">Desserts</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div>
+    <h1>Welcome to Taste Hub</h1>
+    <p>Delicious Desi Food, Fast Food & Sweet Desserts</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="title">
+    <h2>About Taste Hub</h2>
+  </div>
+
+  <div class="about">
+    <img src="img/about aii.jpg">
+    <div class="about-text">
+      <p>
+        Taste Hub is a modern restaurant where traditional desi flavors
+        meet fresh fast food and delicious desserts. We believe in quality,
+        hygiene, and great taste.
+      </p>
+      <p>
+        Our chefs prepare every dish with care so you can enjoy food that
+        feels homemade yet professional. Whether you love spicy desi meals
+        or sweet desserts, Taste Hub has something special for everyone.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- DESI FOOD -->
+<section id="desi">
+  <div class="title"><h2>Desi Food</h2></div>
+  <div class="grid">
+    <div class="card"><img src="img/biryani.jpg"><h3>Biryani</h3><p>Rich spices & traditional taste</p></div>
+    <div class="card"><img src="img/chick karhai.jpg"><h3>Chicken Karahi</h3><p>Spicy & flavorful</p></div>
+    <div class="card"><img src="img/nii.jpg"><h3>Nihari</h3><p>Slow cooked special dish</p></div>
+    <div class="card"><img src="img/handi.jpg"><h3>Chicken Handi</h3><p>Rich creamy taste</p></div>
+    <div class="card"><img src="img/haleem.jpg"><h3>Haleem</h3><p>Rich, flavorful, slow-cooked meat</p></div>
+    <div class="card"><img src="img/korma.jpg"><h3>Korma</h3><p>Creamy with tender meat and rich spices</p></div>
+  </div>
+</section>
+
+<!-- FAST FOOD -->
+<section id="fast">
+  <div class="title"><h2>Fast Food</h2></div>
+  <div class="grid">
+    <div class="card"><img src="img/burger.jpg"><h3>Burger</h3><p>Juicy & loaded</p></div>
+    <div class="card"><img src="img/pizza.jpg"><h3>Pizza</h3><p>Cheesy delight</p></div>
+    <div class="card"><img src="img/french fries.jpg"><h3>French Fries</h3><p>Crispy & golden</p></div>
+    <div class="card"><img src="img/sandwich.jpg"><h3>Sandwich</h3><p>Fresh & tasty</p></div>
+    <div class="card"><img src="img/wrap.jpg"><h3>Wrap</h3><p>Healthy & filling</p></div>
+    <div class="card"><img src="img/nuggets.jpg"><h3>Nuggets</h3><p>Crunchy bites</p></div>
+  </div>
+</section>
+
+<!-- SALADS -->
+<section id="salad">
+  <div class="title"><h2>Salads</h2></div>
+  <div class="grid">
+    <div class="card"><img src="img/g.salad.jpg"><h3>Green Salad</h3><p>Fresh & healthy</p></div>
+    <div class="card"><img src="img/chicken salad.jpg"><h3>Chicken Salad</h3><p>Protein rich</p></div>
+    <div class="card"><img src="img/fruit salad.jpg"><h3>Fruit Salad</h3><p>Sweet & fresh</p></div>
+    <div class="card"><img src="img/veg salad.jpg"><h3>Veg Salad</h3><p>Light & refreshing</p></div>
+  </div>
+</section>
+
+<!-- DESSERTS -->
+<section id="dessert">
+  <div class="title"><h2>Desserts</h2></div>
+  <div class="grid">
+    <div class="card"><img src="img/chocolate cake.jpg"><h3>Chocolate Cake</h3><p>Soft & creamy</p></div>
+    <div class="card"><img src="img/ice cream.jpg"><h3>Ice Cream</h3><p>Cold & sweet</p></div>
+    <div class="card"><img src="img/cup cake.jpg"><h3>Cup Cake</h3><p>Bakery special</p></div>
+    <div class="card"><img src="img/donu.t"><h3>Donuts</h3><p>Sweet rings</p></div>
+    <div class="card"><img src="img/brownie.jpg"><h3>Brownie</h3><p>Chocolate delight</p></div>
+    <div class="card"><img src="img/pastry.jpg"><h3>Pastry</h3><p>Soft & creamy</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="title"><h2>Contact Us</h2></div>
+
+  <div class="contact">
+    <div>
+      <p><b>Address:</b> Main Road, City Center</p>
+      <p><b>Phone:</b> 0300-1234567</p>
+      <p><b>Email:</b> tastehub@gmail.com</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Taste Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
